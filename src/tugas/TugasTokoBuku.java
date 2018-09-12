@@ -28,11 +28,32 @@ public class TugasTokoBuku {
         namaBarang=txt.nextLine();
         System.out.println("Masukan kode barang");
         codeBarang=txt.nextLine();
-        System.out.println("Masukan harga barang");
         System.out.print("Masukan harga barang \nRp.");
         hargaBarang=txt.nextInt();
+        System.out.println("\\");
+        System.out.println("\\");
+        hitung(hargaBarang);
     }
     
-    public void hitung(String nBrg){
+    public static void hitung(int nBrg){
+        int harga=nBrg,hargaAkhir=0,harga2,harga3;
+        if(harga>=100000){
+            if(harga>=200000){
+                if(harga>=500000){
+                    harga2=harga/100;
+                    harga3=harga2*50;
+                    hargaAkhir=harga-harga3;
+                }else{
+                 harga2=harga/100;
+                 harga3=harga2*20;
+                 hargaAkhir=harga-harga3;   
+                }
+            }else{
+                harga2=harga/100;
+                harga3=harga2*10;
+                hargaAkhir=harga-harga3;
+            }
+        }
+        System.out.println("Harga yang harus dibayar adalah Rp."+hargaAkhir);
     } 
 }
