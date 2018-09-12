@@ -9,13 +9,14 @@ import java.util.Scanner;
  *
  * @author Fariz
  */
-public class Tugas {
+public class TugasTokoBuku {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String namaKasir, namaBarang, hargaBarang, codeBarang, diskon;
+        String namaKasir, namaBarang, codeBarang, diskon;
+        int hargaBarang;
         Scanner txt = new Scanner(System.in);
         System.out.println("Fariz Akbar Ade Rian / XRPL6 / 23");
         System.out.println("Selamat datang di toko");
@@ -25,6 +26,13 @@ public class Tugas {
         System.out.println(" ");
         System.out.println("Masukan nama barang");
         namaBarang=txt.nextLine();
+        System.out.println("Masukan kode barang");
+        codeBarang=txt.nextLine();
+        System.out.println("Masukan harga barang");
+        System.out.print("Masukan harga barang \nRp.");
+        hargaBarang=txt.nextInt();
     }
     
+    public void hitung(String nBrg){
+    } 
 }
